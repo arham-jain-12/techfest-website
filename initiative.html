@@ -1,22 +1,175 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<title> Our Initiative </title>
-<style>
-body {
-background-image: url('bgradient.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no repeat;
-}
-</style>
+    <title>Our Initiative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2a8a7d, #0b4f6c);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        .content-wrapper {
+            max-width: 900px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #ffffff;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6; 
+            max-width: 700px;
+            margin: 0 auto 1.5rem auto; 
+        }
+        
+        .mission-statement {
+            font-style: italic; 
+            opacity: 0.9; 
+        }
+        
+        .call-to-action {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            margin-top: 2rem;
+        }
+
+        /* Styling for the new "About Us" section */
+        .section-divider {
+            width: 100px;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin: 4rem auto; /* Creates space above and below */
+            border-radius: 2px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Aligns cards to the top */
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+        }
+        
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image a perfect circle */
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            object-fit: cover; /* Prevents the image from stretching */
+            margin-bottom: 1rem;
+        }
+
+        .profile-card h3 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin: 0;
+        }
+        
+        .profile-card .role {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            opacity: 0.8;
+            margin-top: 0.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .profile-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #f0f0f0;
+        }
+
+        /* Styling for the new footer */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-<h1><b><u>OUR INITIATIVE</u></b></h1>
-<h3><i>Our aim is to try and resolve environmental problems and foster peace and harmony.
-Our motive involves the inclusion and implementation of SDGs in rural areas as well.
-The era of environmental stability draws to a close, thanks to urbanization but if we are to survive, one must awaken. </i></h3>
-<h2> We must prevent the all-out resource war where climatic catastrophes will complement the massacre of millions. </h2>
-<img src="sdg.jpg" width=1800 height=1000>
+    <div class="content-wrapper">
+        <h1>Our Initiative</h1>
+
+        <p class="mission-statement">
+            Our aim is to try and resolve environmental problems and foster peace and harmony.
+            Our motive involves the inclusion and implementation of SDGs in rural areas as well.
+            The era of environmental stability draws to a close, thanks to urbanization but if we are to survive, one must awaken.
+        </p>
+        
+        <p class="call-to-action">
+            We must prevent the all-out resource war where climatic catastrophes will complement the massacre of millions.
+        </p>
+        
+        <img src="SDG.jpg" alt="Sustainable Development Goals">
+        <div class="section-divider"></div>
+        
+        <h2>ABOUT US</h2>
+        
+        <div class="profile-container">
+            
+            <div class="profile-card">
+                <img src="Arham Jain Photo.jpg" alt="Photo of Arham Jain">
+                <h3>Arham Jain</h3>
+                <p class="role">Founder</p>
+                <p>Arham is an 8th-grade student and an avid reader who likes exploring new things. His interests lie in mythologies, history, and astronomy.</p>
+            </div>
+            
+            <div class="profile-card">
+                <img src="AshmitPic.jpeg" alt="Photo of Ashmit Konar">
+                <h3>Ashmit Konar</h3>
+                <p class="role">Co-Founder</p>
+                <p>Ashmit studies in the 8th grade and also likes to read. He enjoys playing the keyboard and basketball in his free time.</p>
+            </div>
+
+        </div>
+        <footer>
+            <p>2025 | TSVS Techfest</p>
+        </footer>
+    </div>
 </body>
 </html>
