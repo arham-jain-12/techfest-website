@@ -10,14 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        /* This CSS creates the design for the whole page */
         body {
-            /* 1. The background from the first page you liked */
             background: linear-gradient(135deg, #2a8a7d, #0b4f6c);
-            background-attachment: fixed; /* Makes the gradient stay in place when scrolling */
+            background-attachment: fixed; 
             
-            font-family: 'Montserrat', sans-serif; /* A clean, modern font */
-            color: #f0f0f0; /* A soft white for the text */
+            font-family: 'Montserrat', sans-serif;
+            color: #f0f0f0; 
             margin: 0;
             padding: 2rem;
             text-align: center;
@@ -25,7 +23,7 @@
 
         .container {
             max-width: 1100px;
-            margin: 0 auto; /* Centers the main content */
+            margin: 0 auto; 
         }
 
         h1 {
@@ -33,7 +31,7 @@
             font-weight: 700;
             padding-bottom: 0.5rem;
             border-bottom: 3px solid #f0f0f0;
-            display: inline-block; /* Makes the border only as wide as the text */
+            display: inline-block; 
             margin-bottom: 1.5rem;
         }
 
@@ -41,35 +39,33 @@
             font-size: 1.2rem;
             line-height: 1.6;
             max-width: 750px;
-            margin: 0 auto 3rem auto; /* More space at the bottom */
+            margin: 0 auto 3rem auto;
             opacity: 0.9;
         }
 
-        /* 2. This container holds the new story cards */
         .stories-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Allows cards to stack on small screens */
-            gap: 2rem; /* The space between the cards */
+            flex-wrap: wrap;
+            gap: 2rem;
         }
         
-        /* 3. The new "Glass Card" styling */
         .story-card {
-            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px; /* Rounded corners */
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-            backdrop-filter: blur(10px); /* This creates the cool blurry glass effect */
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px); 
             padding: 1.5rem;
             width: 100%;
-            max-width: 400px; /* Each card has a max width */
+            max-width: 400px;
             box-sizing: border-box;
         }
 
         .story-card img {
             width: 100%;
             height: auto;
-            border-radius: 10px; /* Rounded corners for the image too */
+            border-radius: 10px;
             margin-bottom: 1rem;
         }
 
